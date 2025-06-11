@@ -25,7 +25,7 @@ import React from 'react';
                     numberOfLines={1}
                     placeholder={placeholderText}
                     placeholderTextColor={theme.placeholder}
-                    {...rest} // Pass down other props like onChangeText, secureTextEntry, etc.
+                    {...rest} 
                 />
                 {/* Display error message if provided */}
                 {hasError && <Text style={[styles.errorText, { color: theme.error }]}>{error}</Text>}

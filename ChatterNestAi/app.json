@@ -28,7 +28,9 @@
       "output": "static",
       "favicon": "./assets/images/img.png"
     },
-    "plugins": [],
+    "plugins": [
+      "expo-router"
+    ],
     "extra": {
       "eas": {
         "projectId": "80225362-683b-4f82-9486-2eb754344add"

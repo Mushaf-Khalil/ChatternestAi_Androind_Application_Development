@@ -26,25 +26,25 @@
              body: { color: theme.text, fontSize: 16 },
              heading1: { color: theme.primary, fontWeight: 'bold', marginTop: 10, marginBottom: 5 },
              code_inline: {
-                 backgroundColor: theme.codeBackground,
+                 backgroundColor: theme.background,
                  // Force bright text for inline code in dark mode too
-                 color: isDarkMode ? '#FFFFFF' : theme.codeText,
+                 color: isDarkMode ? '#FFFFFF' : theme.text,
                  paddingVertical: 1, paddingHorizontal: 4, borderRadius: 4,
                  fontFamily: Platform.OS === 'ios' ? 'Courier New' : 'monospace',
              },
              // Style for ```code blocks``` by targeting 'pre' and 'code' tags
              pre: {
-                 backgroundColor: isDarkMode ? '#111827' : theme.codeBackground, // Keep dark background for dark mode
-                 color: isDarkMode ? '#FFFFFF' : theme.codeText,             // Force bright white text for dark mode
+                 backgroundColor: isDarkMode ? '#111827' : theme.background, // Keep dark background for dark mode
+                 color: isDarkMode ? '#000000' : theme.text,             // Force bright white text for dark mode
                  padding: 12,
                  borderRadius: 4,
                  borderWidth: 1,
                  borderColor: theme.borderColor,
                  marginVertical: 10,
              },
-             // Ensure the 'code' tag itself inside the block also gets the bright color
+            //  Ensure the 'code' tag itself inside the block also gets the bright color
              code: {
-                 color: isDarkMode ? '#FFFFFF' : theme.codeText, // Force bright white text for dark mode
+                 color: isDarkMode ? '#FFFFFF' : theme.text, // Force bright white text for dark mode
                  fontFamily: Platform.OS === 'ios' ? 'Courier New' : 'monospace',
                  // Background color is inherited from 'pre'
              },
